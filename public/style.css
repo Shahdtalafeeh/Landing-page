@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* header */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+nav.scrolled-down {
+  height: 80px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
+  background-color: #fefcfd;
+}
+
+nav.scrolled-down img {
+  scale: 1.25;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+}
+.links li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+.links li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+  transition: 0.3s ease;
+}
+.links li a:hover,
+.links li a.active {
+  color: blue;
+}
+.links a.active ::after,
+.links a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: blue;
+  bottom: -4px;
+  left: 20px;
+  position: absolute;
+}
+
+nav img {
+  width: 80px;
+  height: 60px;
+  transform-origin: 0% 50%;
+  transition: 0.3s;
+}
+
+.container {
+  display: flex;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_toggle {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+
+    background-color: #fefcfd;
+    font-size: 20px;
+    margin: 0;
+  }
+  .links a.active ::after,
+  .links a:hover::after {
+    display: none;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .show_nav {
+    padding-top: 2%;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fefcfd;
+  }
+
+  .links li {
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+  }
+  .navbar_toggle {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    color: #3b3838;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: block;
+  }
+  .container {
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 2%;
+  }
+}
+/* overview */
+
+/* services */
+
+/* projects */
+
+/* counter */
+
+/* Footer */

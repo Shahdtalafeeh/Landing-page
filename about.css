@@ -1,0 +1,33 @@
+.count {
+  color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.count h2 {
+  font-size: 30px;
+  color: #3b3838;
+  margin: 40px 0;
+}
+.icon-box {
+  border: 1px solid blue;
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+  transform: rotate(45deg);
+}
+.icon-box .fa-solid {
+  font-size: 40px;
+  margin: 25px auto;
+  color: #4f516a;
+  transform: rotate(-45deg);
+}
+.counter-box p {
+  font-size: 20px;
+}
+.counter-box .counter {
+  font-size: 80px;
+}
