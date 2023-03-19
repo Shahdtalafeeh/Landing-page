@@ -73,7 +73,7 @@ nav img {
   transition: 0.3s;
 }
 
-.container {
+.container-0 {
   display: flex;
   margin-left: 2%;
   display: flex;
@@ -133,7 +133,7 @@ nav img {
     cursor: pointer;
     display: block;
   }
-  .container {
+  .container-0 {
     width: 100%;
     justify-content: space-between;
     margin-right: 2%;
